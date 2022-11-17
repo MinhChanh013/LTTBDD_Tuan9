@@ -28,7 +28,8 @@ export default function Order({ navigation, route }) {
   }, [route.params]);
 
   const renderOrder = () => {
-    getAllOrder(["Cappucino", "Espresso", "Frappe", "Mocha"]).then((list_order => {
+    getAllOrder(["Avacada Salad", "Royal Burger", "Chicken Patty", "Club Sandwich"]).then((list_order => {
+      console.log(list_order);
       let new_listOrder = []
       let amount = 0
       list_order.forEach((list) => {
